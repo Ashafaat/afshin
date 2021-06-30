@@ -19,7 +19,7 @@ music_notes = input('Enter the musical note:\n').split()
 music_waves = []
 for i in range(0, len(music_notes)):
     [d, c, a, b] = list(music_notes[i])
-    duration = augmentation_dot[int(d)]*(4/pow(2,int(c)))
+    duration = augmentation_dot[int(d)]*(1/pow(2,int(c)))
     if a=='S':
         frequency = 0 # silent note
     else:
